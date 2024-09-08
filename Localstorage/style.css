@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #222;
+    color: aliceblue;
+}
+
+
+/* styling header */
+
+header {
+    max-width: 90%;
+    margin: 50px auto;
+}
+
+header h1 {
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+header h1 span {
+    color: rgb(255, 162, 0);
+}
+
+header p {
+    max-width: 1100px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+
+
+/* styling main saection */
+
+.main-section {
+    max-width: 90%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* styling input section */
+
+.input-section {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-section h1 {
+    margin: 20px 0;
+    color: rgb(106, 106, 106);
+    font-size: 25px;
+}
+
+
+/* styling data form */
+
+.data-form {
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0px -7px 18px 5px #0d0d0d;
+    border-radius: 10px;
+    border: none;
+}
+
+.data-form form div {
+    padding: 5px 0;
+}
+
+.data-form .inputLabel {
+    display: inline-block;
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+.data-form .inputTag {
+    display: inline-block;
+    width: 100%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #303030;
+    color: aliceblue;
+}
+
+.data-form .submitBtn {
+    display: inline-block;
+    height: 35px;
+    width: 80px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    background-color: #bbbbbb;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.data-form .submitBtn:hover {
+    background-color: aliceblue;
+}
+
+
+/* styling display section */
+
+.display-section {
+    width: 600px;
+    margin: 0 0 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.display-section h1 {
+    margin: 20px 0;
+    color: rgb(106, 106, 106);
+    font-size: 25px;
+}
+
+
+/* styling data table */
+
+.data-table {
+    width: 100%;
+    height: 400px;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0px -7px 18px 5px #0d0d0d;
+    border-radius: 10px;
+    border: none;
+    transition: all 5s ease;
+    animation: dataTableShadow 0.5s infinite forwards;
+}
+
+@keyframes dataTableShadow {
+    0% {
+        box-shadow: 0px -7px 18px 5px #0b0b0b;
+    }
+
+    100% {
+        box-shadow: 0px -7px 18px 5px #000000;
+    }
+}
+
+.data-table table {
+    width: 100%;
+}
+
+.data-table table tr th,
+.data-table table tr td {
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid aliceblue;
+}
+
+.data-table table tr i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    padding: 8px;
+    background-color: aliceblue;
+    color: #0d0d0d;
+    border-radius: 10px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.data-table table tr i:hover {
+    background-color: rgb(255, 162, 0);
+    cursor: pointer;
+}
+
+
+
+/* styling footer */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 60px;
+    width: 90%;
+    margin: auto;
+}
+
+footer p {
+    letter-spacing: 0.5px;
+    padding: 5px 0;
+}
+
+footer span {
+    color: rgb(255, 162, 0);
+}
+
+footer .socialIcon {
+    display: flex;
+    list-style: none;
+}
+
+footer .socialIcon li {
+    padding: 0 10px;
+}
+
+footer .socialIcon li a {
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(201, 201, 201);
+    transition: all 0.5s ease;
+}
+
+footer .socialIcon li a:hover {
+    color: rgb(255, 162, 0);
+}
+
+
+@media (max-width:992px) {
+    .main-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .display-section {
+        margin: 0;
+        width: 100%;
+    }
+
+    .input-section {
+        margin: 0;
+        width: 100%;
+    }
+}

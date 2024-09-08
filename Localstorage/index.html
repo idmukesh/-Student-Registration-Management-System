@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System </title>
+</head>
+
+<body>
+
+    <!-- creating header -->
+    <header>
+        <h1><span>Student</span> Managements System</h1>
+        <p>
+            I created a student Registration system that makes it easy for users (administrators) to enter and manage
+            student information. This system collects important details like name, class, student ID, mobile number,
+            and email address. Once entered, this information is stored securely and can be easily viewed whenever
+            needed. Users can add new students or delete existing ones, making it simple to handle student registrations
+            efficiently. The project is designed to improve how student data is organized and accessed, making
+            administrative tasks much easier.
+        </p>
+    </header>
+
+    <!-- main section of our code for input data and display the data -->
+    <section class="main-section">
+        <section class="input-section">
+            <h1>Input Your Data !</h1>
+            <div class="data-form">
+                <form action="">
+                    <div>
+                        <label for="name" class="inputLabel">Name :</label><br>
+                        <input type="text" id="name" name="name" required class="inputTag"><br>
+                    </div>
+                    <div>
+                        <label for="class" class="inputLabel">Class :</label><br>
+                        <input type="text" id="class" name="class" required class="inputTag"><br>
+                    </div>
+                    <div>
+                        <label for="idNum" class="inputLabel">Student ID :</label><br>
+                        <input type="number" id="idNum" name="idNum" required class="inputTag"><br>
+                    </div>
+                    <div>
+                        <label for="mobileNum" class="inputLabel">Mobile Number :</label><br>
+                        <input type="tel" id="mobileNum" name="mobileNum" required class="inputTag"><br>
+                    </div>
+                    <div>
+                        <label for="emailId" class="inputLabel">Email :</label><br>
+                        <input type="email" id="emailId" name="emailId" required class="inputTag"><br>
+                    </div>
+                    <div>
+                        <button type="submit" id="addBtn" class="submitBtn">Add</button><br>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- section for display our data in the form of table -->
+        <section class="display-section">
+            <h1>Your Submitted Data !</h1>
+            <div class="data-table" id="dataTable">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Class</th>
+                            <th>Id</th>
+                            <th>Mob.</th>
+                            <th>Email</th>
+                            <th>Modify</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tBody">
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </section>
+
+    <hr>
+
+    <!-- footer of website -->
+    <footer>
+        <p>Student Registration System , developed by : <span>Mukesh Kumawat</span></p>
+        <ul class="socialIcon">
+            <li><a href="https://www.linkedin.com/in/mukesh-kumawat-6829b8307/"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/idmukesh"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://www.instagram.com/mkmtraj/"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
